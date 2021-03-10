@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <form action="{% url 'result' %}">
+        weekday_is_monday: <input type="text" name="Mon"><br><br>
+        weekday_is_tuesday : <input type="text" name="Tues"><br><br>
+        weekday_is_wednesday : <input type="text" name="Wed"><br><br>
+        weekday_is_thursday : <input type="text" name="Thurs" ><br><br>
+        weekday_is_friday : <input type="text" name="Fri" ><br><br>
+        weekday_is_saturday : <input type="text" name="Sat" ><br><br>
+        weekday_is_sunday :<input type="text" name="Sunday" ><br><br>
+        is_weekend : <input type="text" name="weekend"><br><br>
+        self_reference_min_shares : <input type="text" required name="avg_max_shares"><br><br>
+        self_reference_max_shares : <input type="text" required name="avg_min_share"><br><br>
+        self_reference_avg_shares : <input type="text" required name="avg_shares"><br><br>
+        model : <input type="text" required name="Model" placeholder="Select DecesionTree or LogisticRegression Please"><br><br>
+<!--        shares : <input type="text" required name="Shares"><br><br>-->
+
+        <input type="submit" name="Predict" value="Predict">
+
+
+    </form>
+</body>
+</html>
